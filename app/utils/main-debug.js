@@ -63,7 +63,8 @@ export class Main extends React.Component {
                 break;
             default:
                 debugPanel = LogMonitor;
-                debugPanel = LogMonitor; debugOptions = {top:true, bottom:true, right:true};
+                debugPanel = LogMonitor;
+                debugOptions = {top:true, bottom:true, right:true};
                 break;
         }
 

@@ -1,5 +1,5 @@
 {
-  "name": "ghost-rider",
+  "name": "foocafe-events",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,8 @@
     "test": "karma start",
     "app": "npm run dist && ./node_modules/http-server/bin/http-server ./dist -p 3000",
     "deploy": "npm install && npm run dist && firebase deploy",
-    "jscs": "./node_modules/jscs/bin/jscs ./",
-    "eslint": "eslint ./**/*.js"
+    "jscs": "./node_modules/jscs/bin/jscs ./**/*.js",
+    "eslint": "./node_modules/eslint/bin/eslint.js ./**/*.js"
   },
   "author": "",
   "license": "ISC",

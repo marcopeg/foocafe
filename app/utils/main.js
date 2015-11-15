@@ -14,6 +14,6 @@ export class Main extends React.Component {
             <Provider store={this.props.store}>
                 {React.createElement(this.props.app)}
             </Provider>
-        );;
+        );
     }
 }
