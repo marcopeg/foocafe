@@ -10,15 +10,18 @@
     "test": "karma start",
     "app": "npm run dist && ./node_modules/http-server/bin/http-server ./dist -p 3000",
     "deploy": "npm install && npm run dist && firebase deploy",
-    "jscs": "./node_modules/jscs/bin/jscs ./"
+    "jscs": "./node_modules/jscs/bin/jscs ./",
+    "eslint": "eslint ./**/*.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^5.8.22",
+    "babel-eslint": "^4.1.5",
     "babel-loader": "^5.3.2",
     "chai": "^3.2.0",
     "css-loader": "^0.16.0",
+    "eslint": "^1.9.0",
     "file-loader": "^0.8.4",
     "firebase": "^2.3.0",
     "http-server": "^0.8.5",
