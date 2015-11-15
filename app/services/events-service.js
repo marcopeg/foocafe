@@ -2,6 +2,6 @@
 
 export function start() {
     return (dispatch, getState) => {
-        console.log('start player service');
+        console.log('start events service');
     };
 }

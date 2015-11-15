@@ -1,13 +1,18 @@
-
-
-// Twitter Bootstrap is included via HTML
-require('../app/index.scss');
+/**
+ * The purpose of this entry point is to work on a component in isolation.
+ *
+ * You should create a `specs/components/ComponentSpec` file which loads
+ * the component from the `app` folder and provides the initialization.
+ *
+ * > Providing `ComponentSpec` files within your project is also a very 
+ * > good way to document it efficiently!
+ */
 
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import FooSpec from '../specs/components/FooSpec';
+// Import here the component you are working on:
+import SpecComponent from '../specs/components/FooSpec';
+require('../app/index.scss');
 
-ReactDOM.render((
-    <FooSpec />
-), document.getElementById('app'));
+ReactDOM.render((<SpecComponent />), document.getElementById('app'));
